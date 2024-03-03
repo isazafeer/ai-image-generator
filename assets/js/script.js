@@ -6,7 +6,7 @@ const OPENAI_API_KEY = "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"; //
 const generateAiImages =  async (userPrompt, userImgQuantity) => {
     try {
         //Send a request to OpenAI to generate images based on user inputs
-        const response = await fetch("https://api.openai.com/v1/images/generations", {
+        const response = await fetch ("https://api.openai.com/v1/images/generations", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -54,4 +54,4 @@ const handleFormSubmission = (e) => {
 generateForm.addEventListener("submit", handleFormSubmission);
 
 
-//26:05
+//26:05 https://www.youtube.com/watch?v=fA_tWwPMapM

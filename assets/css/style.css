@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: url(/ai-image-generator/assets/images/img-generator-bg.png);
+    background: url(/assets/images/img-generator-bg.png);
     background-size: cover;
     background-position: center;
 }
