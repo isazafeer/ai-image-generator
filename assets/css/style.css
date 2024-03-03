@@ -26,6 +26,7 @@
     height: 100%;
     opacity: 0.5;
     background: black;
+    height: 40vh;
 }
 
 .image-generator .content {
@@ -55,4 +56,100 @@
     justify-content: space-between;
     background: white;
     border-radius: 30px;
+}
+
+.generate-form .prompt-input {
+    width: 100%;
+    height: 100%;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0 17px;
+}
+
+.generate-form .controls {
+    display: flex;
+    height: 100%;
+    gap: 15px;
+}
+
+.generate-form .img-quantity {
+    font-size: 1rem;
+    border-radius: 30px;
+    padding: 0 15px;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.generate-form .generate-btn {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 25px;
+    border-radius: 30px;
+    background: lightgreen;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.generate-btn:hover {
+    background: darkgreen;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-quantity:hover {
+    background: grey;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Image gallery CSS */
+
+.image-gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    max-width: 1250px;
+    margin: 50px 0;
+    justify-content: center;
+}
+
+.image-gallery .img-card {
+    width: 285px;
+    aspect-ratio: 1 / 1;
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-gallery .img-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-gallery .img-card .download-btn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: #fff;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-gallery .img-card:hover .download-btn {
+    display: flex;
+}
+
+.image-gallery .img-card .download-btn img{
+    width: 14px;
+    height: 14px;
 }
